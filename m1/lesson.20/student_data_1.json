@@ -1,0 +1,17 @@
+{
+  "name": "Алиса",
+  "age": 25,
+  "height": 1.68,
+  "is_student": true,
+  "middle_name": null,
+  "skills": [
+    "Python",
+    "SQL",
+    "Git"
+  ],
+  "address": {
+    "city": "Москва",
+    "street": "Baker Street",
+    "house_number": 221
+  }
+}

@@ -1,0 +1,30 @@
+import json
+
+
+student_data = {
+    "name": "Alice",
+    "age": 25,
+    "height": 1.68,
+    "is_student": True,
+    "middle_name": None,
+    "skills": ["Python", "SQL", "Git"],
+    "address": {
+        "city": "London",
+        "street": "Baker Street",
+        "house_number": 221,
+    }
+}
+
+print(student_data)
+print(type(student_data))
+
+json_str = json.dumps(student_data)
+print(json_str)
+print(type(json_str))
+
+print("*" * 50)
+
+python_data = json.loads(json_str)
+print(python_data)
+print(python_data.get("name"))
+print(type(python_data))
