@@ -1,0 +1,27 @@
+import asyncio
+import logging
+from aiogram import Bot, Dispatcher
+import config
+from handlers import common, echo, career_choice
+
+
+async def main():
+    TOKEN_TG = config.token_telegram
+    TOKEN_OPENAI = config.token_openai
+
+    # Включаем логирование
+    logging.basicConfig(level=logging.INFO)
+
+    bot = Bot(token=TOKEN_TG)
+    dp = Dispatcher()
+
+    dp.include_router(common.router)
+    dp.include_router(career_choice.router)
+    dp.include_router(echo.router)
+
+    await dp.start_polling(bot)
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
+
