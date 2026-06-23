@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/style.css">-->
+<!--    <link rel="stylesheet" href="css/style.css">-->
+    <style>
+        body {
+            color: #242498;
+            font-size: 50px;
+        }
+        h2 {
+            color: rgb(80, 114, 37);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#title1">Главная</a>
+                </li>
+                <li>
+                    <a href="#title2">Код</a>
+                </li>
+                <li>
+                    <a href="/about.html">О нас</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Мой блог JavaRush 1!</h1>
+<!--        <h2>Добро пожаловать 2!</h2>-->
+
+    </header>
+
+    <main>
+        <form action="about.html" method="post">
+            <label for="name_l">Ваше имя:</label>
+            <input type="text" id="name_l" name="username">
+            <br>
+            <br>
+            <label for="email_l">Ваш email:</label>
+            <input type="email" id="email_l" name="user_email">
+            <br>
+            <br>
+            <label for="password_l">Ваш пароль:</label>
+            <input type="password" id="password_l" name="user_password">
+            <br>
+            <br>
+            <label for="message_l">Ваше сообщение</label>
+            <textarea id="message_l" name="user_message" rows="20"></textarea>
+
+            <br>
+            <br>
+            <button type="submit">Отправить</button>
+        </form>
+            <!--    <h3>Добро пожаловать 3!</h3>
+       <h4>Добро пожаловать 4!</h4>
+       <h5>Добро пожаловать 5!</h5>
+       <h6>Добро пожаловать 6!</h6>-->
+
+        <table>
+            <caption>Топ-3 языка программирования</caption>
+                <tr>
+                    <th>Место</th>
+                    <th>Язык</th>
+                    <th>Процент</th>
+                </tr>
+            <tr>
+                <td>1</td>
+                <td>Python</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>JavaScript</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Java</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+            <article id="title1">
+            <h2 style="font-size: 10px; text-align: center">Заголовок 1</h2>
+            <img src="images/cat.jpg" alt="Чеширский кот" width="200" height="500">
+                <p>Lorem <b>ipsum dolor sit amet</b>, <i>consectetur adipisicing </i>elit. <br> Ab accusantium aliquid aperiam <strong>architecto blanditiis cupiditate</strong>, <em>debitis esse et </em>ex id illo mollitia natus porro praesentium provident quis, reprehenderit totam voluptas.</p>
+            <audio controls >
+                <source src="media/audio.mp3" type="audio/mp3">
+                Ваш браузер не поддерживает аудио
+            </audio>
+            <a href="https://google.com" target="_blank">Поисковик</a>
+
+        </article>
+        <article id="title2">
+            <a href="https://google.com" target="_blank"><h2>Заголовок 2</h2></a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWyhjMYVIdk7Bz9x8lHHyHef-KlMHiBfeLvQ&s" alt="Танос" width="300">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <hr> Accusantium explicabo ipsum maiores numquam qui. <q>Ab amet cupiditate hic incidunt placeat quaerat quibusdam,</q>  repudiandae rerum sapiente voluptates! Aperiam eaque, voluptatem? Sint.</p>
+            <blockquote>Python - это язык программирования</blockquote>
+            <p>Автор цитаты: <cite>Пайтон Пайтонович</cite></p>
+            <video controls width="400">
+                <source src="media/temp_video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео
+            </video>
+        </article>
+        <article id="title3">
+            <h2>Заголовок 3</h2>
+            <a href="https://google.com" target="_blank"><img src="images/superman.jpg" alt="Супермен" width="300"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto asperiores beatae consectetur cupiditate delectus deserunt doloribus, dolorum eaque esse facilis iure iusto magnam nam pariatur quam tenetur, voluptatem, voluptatum.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v2AC41dglnM?si=My5iTqNCSM8yKx1B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </article>
+    </main>
+
+    <footer>
+        &copy 2026 Мой блог о программировании
+    </footer>
+
+</body>
+</html>

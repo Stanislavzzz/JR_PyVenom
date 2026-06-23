@@ -1,0 +1,90 @@
+body {
+    background-color: aquamarine;
+    color: brown;
+    font-size: 17px;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: blue;
+    color: grey;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+p {
+    line-height: 1.2;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    /*margin: 50px 70px 100px 150px;*/
+    /*padding: 30px 20px 40px 50px;*/
+}
+
+a:hover {
+    background-color: blue;
+    color: gold;
+    text-decoration: underline;
+}
+
+nav {
+    background-color: grey;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #07077d;
+    color: gold;
+
+}
+
+main > h2 {
+    color: black;
+}
+
+img + p {
+    color: yellow;
+}
+
+.my_class {
+    color: green;
+}
+
+.my_class2 {
+    font-size: 30px;
+}
+
+#title2 p {
+    font-size: 50px;
+}
+
+h1, h2, h3 {
+    color: darkblue;
+}
+
+h2, h5 {
+    font-size: 15px;
+}
