@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:17-alpine
+#    ports:
+#      - "5432:5432"
+    networks:
+      - app-network-new1
+    environment:
+      POSTGRES_DB: app_db
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: app_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app_user -d app_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+
+  app:
+    build: .
+    command: ["python", "db_check.py"]
+#    ports:
+#      - "8000:8000"
+    networks:
+      - app-network-new1
+
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network-new1:
