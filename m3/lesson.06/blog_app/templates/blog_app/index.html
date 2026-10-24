@@ -1,0 +1,27 @@
+{% extends 'blog_app/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Главная
+{% endblock %}
+
+{% block content %}
+    <section id="blog-hero" class="blog-hero">
+        <img class="blog-logo"
+             src="{% static 'blog_app/img/logo.svg' %}"
+             alt="Логотип блога: открытая книга"
+             width="72" height="72">
+
+        <h1 class="blog-hero-title">Добро пожаловать!</h1>
+        <p class="blog-hero-text">
+            Это главная страница нашего блога. Здесь мы публикуем материалы
+            о Python, Django и веб-разработке.
+        </p>
+
+        <button id="style-button" type="button" class="btn btn-primary" aria-pressed="false">
+            Выделить блок
+        </button>
+    </section>
+{% endblock %}
+

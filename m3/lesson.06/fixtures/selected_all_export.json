@@ -1,0 +1,65 @@
+[
+{
+    "model": "blog_app.tag",
+    "pk": 1,
+    "fields": {
+        "name": "Django"
+    }
+},
+{
+    "model": "blog_app.tag",
+    "pk": 2,
+    "fields": {
+        "name": "Python"
+    }
+},
+{
+    "model": "blog_app.tag",
+    "pk": 3,
+    "fields": {
+        "name": "Web"
+    }
+},
+{
+    "model": "blog_app.tag",
+    "pk": 4,
+    "fields": {
+        "name": "Programming"
+    }
+},
+{
+    "model": "blog_app.author",
+    "pk": 1,
+    "fields": {
+        "name": "John"
+    }
+},
+{
+    "model": "blog_app.author",
+    "pk": 2,
+    "fields": {
+        "name": "Jane"
+    }
+},
+{
+    "model": "blog_app.author",
+    "pk": 3,
+    "fields": {
+        "name": "Alice"
+    }
+},
+{
+    "model": "blog_app.author",
+    "pk": 4,
+    "fields": {
+        "name": "Bob"
+    }
+},
+{
+    "model": "blog_app.author",
+    "pk": 5,
+    "fields": {
+        "name": "Eve"
+    }
+}
+]
