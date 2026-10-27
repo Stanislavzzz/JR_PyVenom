@@ -1,0 +1,14 @@
+{% extends 'blog_app/base.html' %}
+
+{% block title %}
+    {{ author.name }}
+{% endblock %}
+
+{% block content %}
+
+    <h1>{{ author.name }}</h1>
+    <h3>Биография: {{ author.profile.bio }}</h3>
+    <p>Сайт: {{ author.profile.website }}</p>
+
+{% endblock %}
+
