@@ -1,0 +1,45 @@
+{% extends 'blog_app/base.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <h3>Автор: {{ post.author.name }}</h3>
+    <p>Рейтинг: {{ post.rating }}</p>
+
+    {% if post.rating >= 5 %}
+        <p>Высокий рейтинг</p>
+    {% else %}
+        <p>Низкий рейтинг</p>
+    {% endif %}
+    <p>{{ post.content }}</p>
+    <p> <small>Создан: {{ post.created_at|date:"d.m.Y H:i" }}</small></p>
+
+<hr>
+<h2>Тэги:</h2>
+<ul>
+    {% for tag in tags %}
+    <li class="badge bg-primary text-white">
+        {{ tag.name }}
+    </li>
+    {% endfor %}
+</ul>
+
+<hr>
+<h2>Комментарии:</h2>
+<ul class="list-group">
+    {% for comment in comments %}
+    <li class="list-group-item">
+        <p><strong>{{ comment.author.name }}</strong></p>
+        <p>{{ forloop.counter }}. {{ comment.text }}</p>
+        <small>{{ comment.created_at }}</small>
+    </li>
+    {% empty %}
+        <p>Комментариев пока нет.</p>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}
