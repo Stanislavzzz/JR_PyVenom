@@ -1,0 +1,41 @@
+.blog-hero {
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+
+    background-image: linear-gradient(110deg, #f8fbff, #e8f0ff), url("../img/pattern.svg");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, 160px 160px;
+    border: 1px solid #ccdcf5;
+}
+
+.blog-logo {
+    width: 72px;
+    height: 72px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.blog-hero-title {
+    color: #183b73;
+    font-weight: 700;
+}
+
+.blog-hero-text {
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+.blog-hero.is-highlighted {
+    border-color: #a15b06;
+    box-shadow: 0 0 0 4px rgba(255, 183, 77, 0.3);
+}
+
+.blog-hero.is-highlighted .blog-hero-title {
+    color: #8c4600;
+}
+
+.blog-footer {
+    margin-top: 2rem;
+}
